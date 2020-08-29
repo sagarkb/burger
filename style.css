@@ -19,6 +19,10 @@ body {
   box-shadow: inset -15px 0 #c15711;
   margin: 2% auto;
   position: relative;
+  animation: moveInLeft 1s ease-out;
+}
+.breadtop:hover {
+  transform: scale(1.3) rotate(-5deg);
 }
 .seeds {
   position: absolute;
@@ -97,26 +101,75 @@ body {
   border-radius: 1px;
   margin: 2% auto;
 }
-.salat {
+.salat1 {
   width: 90%;
   height: 5%;
   margin: 2% auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 30px;
+  animation: moveInLeft 1s ease-out;
 }
-.cheese {
+.salat1:hover {
+  transform: scale(1.3) rotate(5deg);
+}
+.salat2 {
+  width: 90%;
+  height: 5%;
+  margin: 2% auto;
+  background: linear-gradient(#228c1d, #91ce50);
+  border-radius: 30px;
+  animation: moveInRight 1s ease-out;
+}
+.salat2:hover {
+  transform: scale(1.3) rotate(-5deg);
+}
+.cheese1 {
   width: 83%;
   height: 8%;
   background: linear-gradient(#f4d004, #d6bb22);
   margin: 2% auto;
   border-radius: 20px;
+  transition: all 0.3s;
+  animation: moveInLeft 1s ease-out;
 }
-.meat {
+.cheese1:hover {
+  transform: scale(1.3) rotate(5deg);
+}
+.cheese2 {
+  width: 83%;
+  height: 8%;
+  background: linear-gradient(#f4d004, #d6bb22);
+  margin: 2% auto;
+  border-radius: 20px;
+  transition: all 0.3s;
+  animation: moveInRight 1s ease-out;
+}
+.cheese2:hover {
+  transform: scale(1.3) rotate(-5deg);
+}
+.meat1 {
   width: 75%;
   height: 10%;
   background: linear-gradient(#7f3608, #702e05);
   margin: 2% auto;
   border-radius: 20px;
+  transition: all 0.3s;
+  animation: moveInLeft 1s ease-out;
+}
+.meat1:hover {
+  transform: scale(1.3) rotate(-5deg);
+}
+.meat2 {
+  width: 75%;
+  height: 10%;
+  background: linear-gradient(#7f3608, #702e05);
+  margin: 2% auto;
+  border-radius: 20px;
+  transition: all 0.3s;
+  animation: moveInRight 1s ease-out;
+}
+.meat2:hover {
+  transform: scale(1.3) rotate(-5deg);
 }
 .breadbottom {
   width: 80%;
@@ -125,4 +178,34 @@ body {
   margin: 2% auto;
   border-radius: 0 0 30% 30%;
   box-shadow: inset -15px 0 #c15711;
+  animation: moveInLeft 1s ease-out;
+}
+.breadbottom:hover {
+  transform: scale(1.3) rotate(5deg);
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    tranform: translatex(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    tranform: translatex(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
